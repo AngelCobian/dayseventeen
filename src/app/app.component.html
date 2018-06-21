@@ -35,6 +35,14 @@
         <div>
         <p basicHighlight>Style me with basic hightlight directive</p>
         <p BetterHighlight [defaultColor]="'blue'" [highlightColor]="'red'">Style me with better hightlight directive</p>
+
+
+        <div [ngSwitch]="value">
+          <p *ngSwitchCase='5'>Value is 5</p>
+          <p *ngSwitchCase='10'>Value is 10</p>
+          <p *ngSwitchCase='100'>Value is 100</p>
+          <p *ngSwitchDefault>Value is Defult</p>
+        </div>
     </div>
 </ul>
 </div>
